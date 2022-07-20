@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    font-family: 'Ibarra Real Nova', serif;
+}
+/* -------Header Part Start........... */
+
+.container{
+    background-color: white;
+    padding: 100px;
+}
+.top-banner{
+     background-color: black;
+     padding: 100px;
+     min-height: 60vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 25px;
+     cursor: pointer;
+}
+
+.content{
+    max-width: 700px;
+}
+.content h1{
+    font-size: 4em;
+    color: white;
+}
+.content p{
+    font-size: 1em;
+    color: white;
+}
+.content a{
+   display: inline-block;
+   background-color: red;
+   color: white;
+   padding: 8px 20px;
+   text-decoration: none;
+   font-weight: 600;
+   margin-top: 20px;
+   border-radius: 5px;
+}
+.watch-live{
+    font-size: 19px;
+}
+.watch-live:hover{
+    background-color: green;
+   transform: scale(1.2);
+   transition: 0.9s;
+   transform: rotate(360deg);
+}
+.banner-image img{
+    width: 400px;
+    margin-left: 50px;
+}
+
+.card-text{
+    padding-top: 20px;
+}
+
+/* ................Main part style................... */
+
+.second-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+ul{
+    background-color: black;
+    height: 225px;
+    padding: 10px 16px 20px 16px;
+    width: 186px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    margin-top: 50px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  
+}
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 23px;
+    
+}
+.card{
+    background-color: white;
+    width: 249px;
+    margin-bottom: 40px;
+    border: 10px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: -2px 13px 43px -12px;
+}
+
+.card img {
+    width: 249px;
+    height: 198px;
+    overflow: hidden;
+}
+.btn{
+    padding: 4px 18px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 10px;
+}
+.card-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .....................Footer Part Style........................ */
+
+
+.Goal{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+footer{
+    background-color: black;
+    padding: 50px 0;
+}
+hr{
+    background-color: white;
+    margin: 20px 120px;
+}
+.social-services{
+    display: flex;
+    justify-content: center;
+}
+.social-services li{
+    margin-left: 45px;
+    list-style: none;
+    color: white;
+}
+.social-icon{
+    display: flex;
+    /* padding: 20px 20px; */
+    justify-content: center;
+    font-size: 30px;
+   
+}
+.social-icon a{
+    margin: 10px;
+}
+
+/* ..................Responsive Design............................. */
+
+
+ /* ..............Mobile Device......................  */
+
+
+@media screen and (max-width: 576px) {
+
+ /* -------header part Start........... */
+ .container{
+    padding: 30px;
+}
+  .top-banner{
+     padding: 50px;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+  }
+  .content h1{
+    font-size: 3em;
+ }
+  .content img{
+      padding-top: 30px;
+  }
+
+.image img{
+    width: 300px;
+} 
+
+/*................. Main Part............... */
+
+.second-part{
+    grid-template-columns: repeat(1, 1fr);
+}
+.link{
+    margin-left: 88px;
+}
+.card-section{
+    grid-template-columns: repeat(1, 1fr);
+   margin-left: 60px;
+}
+
+/* .........footer part............... */
+.social-services{
+   flex-direction: column;
+    align-items: center;
+}
+.social-services li{
+    padding: 10px 0;
+}
+.social-icon{
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+
+
+
+/*....................... Tablet Device...................... */
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /* -------Top Banner Start........... */
+
+   .container{
+        padding: 10px;
+      }
+    .top-banner{
+       padding: 40px 10px 50px;
+       flex-direction: row;
+       text-align: center;
+    }
+    .banner-image img{
+        width: 250px;
+        margin-left: 60px;
+    }
+  .content h1{
+    font-size: 30px;
+    }
+  .content p{
+    font-size: 10px;
+}
+
+/*................. Main Part............... */
+
+ul {
+    display: flex;
+    background-color: black;
+    height: 48px;
+    padding: 16px 0px 16px 0px;
+    width: 586px;
+}
+ul li{
+    margin-left: 7px;
+    margin-top: 10px;
+}
+.second-part{
+    grid-template-columns: repeat(1, 1fr);
+}
+.card-section{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+/* .........footer part............... */
+
+
+.social-services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.social-services li{
+    margin-left: 16px;
+    list-style: none;
+    color: white;
+}
+.social-icon a{
+    margin-top: 40px;
+}
+}
